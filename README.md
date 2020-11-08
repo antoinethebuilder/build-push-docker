@@ -7,3 +7,33 @@
     <img alt="GitHub" src="https://img.shields.io/github/license/antoinethebuilder/build-push-docker?style=flat-square">
 </div>
 
+
+# Information
+
+The workflow used in this repository is scheduled to build the image every day.
+
+
+## Packages for `base` image
+The image contains a small set of packages to be used for general purposes.
+- jq 
+- git
+- curl 
+- p7zip
+- python3 
+- py3-pip 
+- py3-virtualenv 
+
+# Platforms
+Support for multiple platforms for this image are available:
+
+    $ docker run --rm mplatform/mquery antoinethebuilder/base:latest
+    Image: antoinethebuilder/base:latest
+    * Manifest List: Yes
+    * Supported platforms:
+    - linux/amd64
+    - linux/arm/v6
+    - linux/arm/v7
+    - linux/arm64
+    - linux/386
+    - linux/ppc64le
+    - linux/s390x
