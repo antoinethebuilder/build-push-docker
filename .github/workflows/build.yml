@@ -2,7 +2,7 @@ name: build-push-docker
 
 on:
   schedule:
-    - cron: '0 0 * * *' # everyday at 00:00
+    - cron: '15 23 * * *' # everyday at 23:15
   push:
     branches:
       - 'master'
