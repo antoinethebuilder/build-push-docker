@@ -1,8 +1,8 @@
-name: build-push-docker
+name: Build and Push image
 
 on:
   schedule:
-    - cron: '15 23 * * *' # everyday at 23:15
+    - cron: '00 17 * * *' # 17:00 UTC
   push:
     branches:
       - 'master'
